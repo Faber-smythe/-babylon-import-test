@@ -9,12 +9,14 @@ $ npm install
 # serve with hot reload at localhost:3000
 $ npm run dev
 
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+For detailed explanation on how nuxt work, check out [the documentation](https://nuxtjs.org).
+
+
+
+## The Babylon issue
+
+- So the actual issue is in ` /pages/index.vue`. **Nuxt** is component based, so the Babylon code is inside a *mounted(){...}* method.
+The same file contains the **html** (thus the canvas for rendering) in a `<template>` tag, the **typescript** with the *imports* and the **CSS** in a `<style>` tag.
+- The `test.glb` file which is the target of *SceneLoader.ImportMeshAsync()* lives in `/static/` which contains the public files
