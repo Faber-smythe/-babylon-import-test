@@ -1,0 +1,26 @@
+{
+  "name": "babylon-import-test",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@babylonjs/core": "^5.0.0-alpha.23",
+    "@babylonjs/loaders": "^4.2",
+    "babylonjs": "^5.0.0-alpha.23",
+    "babylonjs-loaders": "^4.2.0",
+    "core-js": "^3.9.1",
+    "install": "^0.13.0",
+    "nuxt": "^2.15.3",
+    "vue-class-component": "^7.2.6",
+    "vue-property-decorator": "^9.1.2"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.15.3",
+    "@nuxt/typescript-build": "^2.1.0"
+  }
+}
